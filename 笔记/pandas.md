@@ -1,6 +1,6 @@
 # Pandas
 
-### Series
+### Series（系列）
   Series 是一个带有`名称`和`索引`的一维数组
 ```python
 import pandas as pd
@@ -35,11 +35,12 @@ True
   - 通过Series的俩个属性`values`和`index`获取内容和索引
   - Series获取的内容输出为一个`numpy.ndarray`类型
   - `pd.isnull`和`pd.nonull`可检测缺失数据
+  - 主要特点为：同质数据、大小不可变、数据值可变
 
 ---
 
-### Dataframe
-  DataFrame 是一个带有索引的二维数据结构，每列可以有自己的名字，并且可以有不同的数据类型。你可以把它想象成一个 excel 表格或者数据库中的一张表，DataFrame 是最常用的 Pandas 对象
+### Dataframe（数据帧）
+  DataFrame 是一个带有索引的（异构数据）二维数据结构，每列可以有自己的名字，并且可以有不同的数据类型。你可以把它想象成一个 excel 表格或者数据库中的一张表，DataFrame 是最常用的 Pandas 对象
 
 ```python
 import pandas as pd
@@ -100,5 +101,5 @@ print结果:
 ```
 注意点：
   - 列可以无限扩展
-
+  - 主要特点为：异构数据、大小可变、数据可变
 ---
